@@ -6,7 +6,7 @@ var randomChosenColour;
 var level = 0;
 var started = false;
 
-var wrongMusic = new Audio('/sounds/wrong.mp3')
+var wrongMusic = new Audio('./sounds/wrong.mp3')
 
 $(document).keydown(function(){
         if(!started){
@@ -42,7 +42,7 @@ function nextSequence(){
 }
 
 function playSound(name){
-        new Audio("/sounds/"+name+".mp3").play()
+        new Audio("./sounds/"+name+".mp3").play()
 }
 
 function animatePress(currentColour){
